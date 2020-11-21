@@ -2,6 +2,13 @@
 @import "./variables.scss";
 
 //Global Classes
+:root {
+  --image-supervisor: url("../images/icon-supervisor.svg");
+  --image-calculator: url("../images/icon-calculator.svg");
+  --image-karma: url("../images/icon-karma.svg");
+  --image-teambuilder: url("../images/icon-team-builder.svg");
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -47,6 +54,38 @@ body {
       .header__description {
         margin-top: 1.4rem;
         @include textStyle(1.3rem, 400, inherit);
+      }
+    }
+
+    .cards {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .supervisor-bg-image {
+        --img: var(--image-supervisor);
+      }
+      .karma-bg-image {
+        --img: var(--image-karma);
+      }
+      .teambuilder-bg-image {
+        --img: var(--image-teambuilder);
+      }
+      .calculator-bg-image {
+        --img: var(--image-calculator);
+      }
+
+      .card {
+        margin: 2rem;
+        padding: 5rem;
+        background-color: lightcyan;
+        width: 30rem;
+        min-width: 30rem;
+        height: 25rem;
+        background-image: var(--img);
+        background-repeat: no-repeat;
+        background-position: 90% 90%;
+        background-size: 20%;
       }
     }
   }

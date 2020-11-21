@@ -1,3 +1,10 @@
+:root {
+  --image-supervisor: url("../images/icon-supervisor.svg");
+  --image-calculator: url("../images/icon-calculator.svg");
+  --image-karma: url("../images/icon-karma.svg");
+  --image-teambuilder: url("../images/icon-team-builder.svg");
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -45,5 +52,46 @@ body main .header .header__description {
   font-size: 1.3rem;
   font-weight: 400;
   color: inherit;
+}
+
+body main .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .cards .supervisor-bg-image {
+  --img: var(--image-supervisor);
+}
+
+body main .cards .karma-bg-image {
+  --img: var(--image-karma);
+}
+
+body main .cards .teambuilder-bg-image {
+  --img: var(--image-teambuilder);
+}
+
+body main .cards .calculator-bg-image {
+  --img: var(--image-calculator);
+}
+
+body main .cards .card {
+  margin: 2rem;
+  padding: 5rem;
+  background-color: lightcyan;
+  width: 30rem;
+  min-width: 30rem;
+  height: 25rem;
+  background-image: var(--img);
+  background-repeat: no-repeat;
+  background-position: 90% 90%;
+  background-size: 20%;
 }
 /*# sourceMappingURL=styles.css.map */
