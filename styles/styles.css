@@ -3,6 +3,10 @@
   --image-calculator: url("../images/icon-calculator.svg");
   --image-karma: url("../images/icon-karma.svg");
   --image-teambuilder: url("../images/icon-team-builder.svg");
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
 }
 
 * {
@@ -83,15 +87,43 @@ body main .cards .calculator-bg-image {
 }
 
 body main .cards .card {
+  position: relative;
   margin: 2rem;
   padding: 5rem;
-  background-color: lightcyan;
+  background-color: white;
   width: 30rem;
   min-width: 30rem;
   height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
   background-image: var(--img);
   background-repeat: no-repeat;
   background-position: 90% 90%;
   background-size: 20%;
+}
+
+body main .cards .card .red_color {
+  --line-color: var(--red);
+}
+
+body main .cards .card .cyan_color {
+  --line-color: var(--cyan);
+}
+
+body main .cards .card .orange_color {
+  --line-color: var(--orange);
+}
+
+body main .cards .card .blue_color {
+  --line-color: var(--blue);
+}
+
+body main .cards .card .card__top-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2%;
+  width: 100%;
+  background-color: var(--line-color);
 }
 /*# sourceMappingURL=styles.css.map */
