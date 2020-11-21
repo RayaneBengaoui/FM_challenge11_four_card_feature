@@ -8,5 +8,42 @@
 html {
   font-size: 62.5%;
   font-family: "Poppins", sans-serif;
+  color: #a3a5ae;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #fafafa;
+}
+
+body main {
+  width: 80%;
+  margin: 5rem auto;
+}
+
+body main .header {
+  text-align: center;
+  max-width: 45rem;
+  margin: 0 auto;
+}
+
+body main .header .header__title {
+  font-size: 3rem;
+  font-weight: 200;
+  color: #4c4e61;
+  line-height: 1.2;
+}
+
+body main .header .header__title-heavy {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #4c4e61;
+}
+
+body main .header .header__description {
+  margin-top: 1.4rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: inherit;
 }
 /*# sourceMappingURL=styles.css.map */
