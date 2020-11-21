@@ -37,28 +37,30 @@ html {
 body {
   min-height: 100vh;
   background-color: $lightGray;
+  display: flex;
+  align-items: center;
 
   main {
     width: 80%;
-    margin: 5rem auto;
+    margin: 0rem auto;
 
     .header {
       text-align: center;
-      max-width: 45rem;
+      max-width: 50rem;
       margin: 0 auto;
 
       .header__title {
-        @include textStyle(3rem, 200, $darkBlue);
+        @include textStyle(3.3rem, 200, $darkBlue);
         line-height: 1.2;
       }
 
       .header__title-heavy {
-        @include textStyle(3rem, 600, $darkBlue);
+        @include textStyle(3.3rem, 600, $darkBlue);
       }
 
       .header__description {
         margin-top: 1.4rem;
-        @include textStyle(1.3rem, 400, inherit);
+        @include textStyle(1.5rem, 400, inherit);
       }
     }
 
@@ -66,6 +68,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-top: 5rem;
 
       .supervisor-bg-image {
         --img: var(--image-supervisor);
@@ -83,17 +86,18 @@ body {
       .card {
         position: relative;
         margin: 2rem;
-        padding: 5rem;
+        padding: 3rem;
         background-color: white;
-        width: 30rem;
+        width: 34rem;
         min-width: 30rem;
         height: 25rem;
         border-radius: 10px;
         overflow: hidden;
         background-image: var(--img);
         background-repeat: no-repeat;
-        background-position: 90% 90%;
-        background-size: 20%;
+        background-position: 90% 85%;
+        background-size: 17%;
+        box-shadow: 0px 10px 15px rgba($color: #404296, $alpha: 0.2);
 
         .red_color {
           --line-color: var(--red);
@@ -115,6 +119,17 @@ body {
           height: 2%;
           width: 100%;
           background-color: var(--line-color);
+        }
+
+        .card__title {
+          @include textStyle(2rem, 600, $darkBlue);
+        }
+
+        .card__description {
+          @include textStyle(1.2rem, 400, inherit);
+          padding-top: 1.3rem;
+          max-width: 250px;
+          line-height: 1.9;
         }
       }
     }

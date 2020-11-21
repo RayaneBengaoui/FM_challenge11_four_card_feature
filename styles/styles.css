@@ -25,35 +25,41 @@ html {
 body {
   min-height: 100vh;
   background-color: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body main {
   width: 80%;
-  margin: 5rem auto;
+  margin: 0rem auto;
 }
 
 body main .header {
   text-align: center;
-  max-width: 45rem;
+  max-width: 50rem;
   margin: 0 auto;
 }
 
 body main .header .header__title {
-  font-size: 3rem;
+  font-size: 3.3rem;
   font-weight: 200;
   color: #4c4e61;
   line-height: 1.2;
 }
 
 body main .header .header__title-heavy {
-  font-size: 3rem;
+  font-size: 3.3rem;
   font-weight: 600;
   color: #4c4e61;
 }
 
 body main .header .header__description {
   margin-top: 1.4rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 400;
   color: inherit;
 }
@@ -68,6 +74,7 @@ body main .cards {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 5rem;
 }
 
 body main .cards .supervisor-bg-image {
@@ -89,17 +96,19 @@ body main .cards .calculator-bg-image {
 body main .cards .card {
   position: relative;
   margin: 2rem;
-  padding: 5rem;
+  padding: 3rem;
   background-color: white;
-  width: 30rem;
+  width: 34rem;
   min-width: 30rem;
   height: 25rem;
   border-radius: 10px;
   overflow: hidden;
   background-image: var(--img);
   background-repeat: no-repeat;
-  background-position: 90% 90%;
-  background-size: 20%;
+  background-position: 90% 85%;
+  background-size: 17%;
+  -webkit-box-shadow: 0px 10px 15px rgba(64, 66, 150, 0.2);
+          box-shadow: 0px 10px 15px rgba(64, 66, 150, 0.2);
 }
 
 body main .cards .card .red_color {
@@ -125,5 +134,20 @@ body main .cards .card .card__top-color {
   height: 2%;
   width: 100%;
   background-color: var(--line-color);
+}
+
+body main .cards .card .card__title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #4c4e61;
+}
+
+body main .cards .card .card__description {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: inherit;
+  padding-top: 1.3rem;
+  max-width: 250px;
+  line-height: 1.9;
 }
 /*# sourceMappingURL=styles.css.map */
