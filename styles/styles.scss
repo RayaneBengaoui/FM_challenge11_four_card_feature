@@ -135,3 +135,35 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 1430px) {
+  body {
+    main {
+      width: 90%;
+      margin: 0rem auto;
+
+      .header {
+        margin-top: 4rem;
+        max-width: 32rem;
+
+        .header__title {
+          @include textStyle(2.5rem, 200, $darkBlue);
+          line-height: 1.2;
+        }
+
+        .header__title-heavy {
+          @include textStyle(2.5rem, 600, $darkBlue);
+        }
+
+        .header__description {
+          margin-top: 1.4rem;
+          @include textStyle(1.5rem, 400, inherit);
+        }
+      }
+
+      .cards {
+        flex-direction: column;
+      }
+    }
+  }
+}

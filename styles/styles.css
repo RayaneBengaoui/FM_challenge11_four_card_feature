@@ -150,4 +150,38 @@ body main .cards .card .card__description {
   max-width: 250px;
   line-height: 1.9;
 }
+
+@media screen and (max-width: 1430px) {
+  body main {
+    width: 90%;
+    margin: 0rem auto;
+  }
+  body main .header {
+    margin-top: 4rem;
+    max-width: 32rem;
+  }
+  body main .header .header__title {
+    font-size: 2.5rem;
+    font-weight: 200;
+    color: #4c4e61;
+    line-height: 1.2;
+  }
+  body main .header .header__title-heavy {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #4c4e61;
+  }
+  body main .header .header__description {
+    margin-top: 1.4rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: inherit;
+  }
+  body main .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
